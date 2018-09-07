@@ -199,6 +199,8 @@ vector<employee> searchDirectory(vector<employee>& directory) {
         string first = query.substr(0, space);
         string last  = query.substr(space+1);
 
+        last.erase(remove(last.begin(), last.end(), ' '), last.end());
+
         found = searchAdvanced(directory, first, last);
     }
     return found;

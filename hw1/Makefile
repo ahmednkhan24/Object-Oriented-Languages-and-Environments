@@ -1,6 +1,7 @@
 
 output: main.o common.o employee.o
 	g++ main.o common.o employee.o -o output
+	./output
 
 main.o: main.cpp
 	g++ -c main.cpp

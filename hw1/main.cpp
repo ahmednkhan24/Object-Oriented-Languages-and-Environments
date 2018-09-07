@@ -32,6 +32,9 @@ int main() {
     while (action != 0) {
         if (action == 1) {
             loadDirectory(directory);
+            // for (employee e : directory) {
+            //     cout << e.getFirstName() << " " << e.getLastName() << endl;
+            // }
         }
         else if (action == 2) {
             addToDirectory(directory);
